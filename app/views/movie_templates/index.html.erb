@@ -51,11 +51,11 @@
     <td>
       <%#=@the_movie.director.name%>
 
-      <%# matching_directors = Director.where({ :id => a_movie.director_id }) %>
+      <% matching_directors = Director.where({ :id => a_movie.director_id }) %>
       
-      <%# the_director = matching_directors.at(0) %>
+      <% the_director = matching_directors.at(0) %>
 
-      <%#= the_director.name %>
+      <%= the_director.name %>
       
     </td>
 
